@@ -1,0 +1,96 @@
+body {
+    text-align: center;
+    font-family: 'Martian Mono';
+    background-image: url(https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: whitesmoke
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-family: 'Martian Mono';
+    margin-top: 70px;
+}
+
+h2 {
+    font-family: 'Martian Mono';
+    margin-bottom: -20px;
+}
+
+h3 {
+    margin-top: 50px;
+
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+}
+
+li {
+    padding: 5px 0;
+}
+
+div {
+    animation: blur-in 1.5s linear both
+}
+
+@keyframes blur-in {
+    0% {
+        filter: blur(12px);
+        opacity: 0
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+
+.neon-text {
+    color: #f78bff;
+    text-shadow:
+        0 0 7px #f78bff,
+        0 0 10px #f78bff,
+        0 0 21px #f78bff,
+        0 0 42px rgb(199, 0, 249),
+        0 0 82px rgb(211, 0, 249),
+        0 0 92px rgb(211, 0, 249),
+        0 0 102px rgb(211, 0, 249),
+        0 0 151px rgb(211, 0, 249);
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow:
+            0 0 4px #f78bff,
+            0 0 11px #f78bff,
+            0 0 19px #f78bff,
+            0 0 40px rgb(211, 0, 249),
+            0 0 80px rgb(211, 0, 249),
+            0 0 90px rgb(211, 0, 249),
+            0 0 100px rgb(211, 0, 249),
+            0 0 150px rgb(211, 0, 249);
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
